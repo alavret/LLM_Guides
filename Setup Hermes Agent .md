@@ -26,40 +26,40 @@ hermes setup
 
 - на следюущем экране можно увидеть инфомрацию о корфигурационных файлах, с которыми работает Hermes Agent и которые можно править напрямую для изменения конфигурации агента. Также конфигурацию можно изменять через графический интерфейс или с помощью команды `hermes config edit`:
 <p align="center">
-  <img src="./images/hermes_setup_02.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_02.png" width="70%" alt="Config location">
 </p> 
 
 - следующий выбор в настройках агента - **Inference Provider**. Вводим `41 Custom endpoint`:
 <p align="center">
-  <img src="./images/hermes_setup_03.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_03.png" width="70%" alt="Inference provider">
 </p> 
 
 - вводим URL и API Key полученные вами для работы с моделями. Будет выполнена доступность данного URL и правильность введенного ключа, и, если что-то неправильно, система перезапросит ввод данных:
 <p align="center">
-  <img src="./images/hermes_setup_04.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_04.png" width="70%" alt="URL and API key">
 </p>  
 <p align="center">
-  <img src="./images/hermes_setup_05.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_05.png" width="70%" alt="Check connections">
 </p> 
 
 - далее необходимо ввести информацию об используемом протоколе для работы с моделями, выбираем `2. Chat Completions`:
 <p align="center">
-  <img src="./images/hermes_setup_06.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_06.png" width="70%" alt="Protocol">
 </p> 
 
 - далее выбирается модель, которая будет использоваться по умолчанию, в примере ниже выбрана GLM 5.3:
 <p align="center">
-  <img src="./images/hermes_setup_07.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_07.png" width="70%" alt=Defaullt model">
 </p> 
 
 - далее необходимо выбрать размер контекстного окна для модели по умолчанию. Можно оставить autodetect, либо выставить значение, указанное для конкретной модели вашего провайдера. Для MWS Model Hub информацию можно посмотреть в табличке [Доступные модели](https://mws.ru/docs/cloud-platform/gpt/general/gpt-models.html). Для размера в 256 тыс. токенов нужно вводить значение `262144`:
 <p align="center">
-  <img src="./images/hermes_setup_08.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_08.png" width="70%" alt="Context size">
 </p> 
 
 - далее запрашивается удобное имя для настраиваемого провайдера, придумайте ее сами:
 <p align="center">
-  <img src="./images/hermes_setup_09.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_09.png" width="70%" alt="Name of provider">
 </p> 
 
 > [!NOTE]
@@ -70,37 +70,37 @@ hermes setup
 > Для GLM 5.3 в сервисе MWS Model Hub есть следующие фиксированные значения: `minimal`, `low`, `medium`, `high`.
 
 <p align="center">
-  <img src="./images/hermes_setup_10.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_10.png" width="70%" alt="Reasoning effort">
 </p> 
 
 - далее запрашивается среда для запуска консольных команд и скриптов Python (влияет на безопасность работы с данными через Hermes Agent). Для некритичных систем можно использовать опцию `local`:
 <p align="center">
-  <img src="./images/hermes_setup_11.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_11.png" width="70%" alt="Excution enviroment">
 </p> 
 
 - далее можно сконфигурировать подключение к платформам обмена сообщениями. В данном случае, я пропускаю данный пункт (нажимаю `Enter`):
 <p align="center">
-  <img src="./images/hermes_setup_12.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_12.png" width="70%" alt="Message gateway">
 </p> 
 
 - далее предлагается настроить плагины для выполнения различных задач с помощью агента. Значения по умолчнию закрывают базовые сценарии, поэтому можно нажать `Enter`:
 <p align="center">
-  <img src="./images/hermes_setup_13.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_13.png" width="70%" alt="Plugins">
 </p> 
 
 - если на предыдущем этапе в списке вспомогательных средств было выбрано **Browser Automation**, то следующий экран предлагает на выбор несколько различных движков для такой автоматизации. На текущий момент целесообразно выбрать пункт `5. Browser Use`:
 <p align="center">
-  <img src="./images/hermes_setup_14.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_14.png" width="70%" alt="Browser automation">
 </p> 
 
 - далее предлагается выбрать дополнительно доступ к моделям через встроенного провайдера. Пропускем этот шаг - пункт `10. Skip`:
 <p align="center">
-  <img src="./images/hermes_setup_15.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_15.png" width="70%" alt="Additional providers">
 </p> 
 
-- следующий экран предлагает выбрать Text-to-Speach провайдера. Среди бесплатных вариантов можно выбрать как облачный сервис, так и с возможностью локальной инсталляции. В данном случае выбрана облачная инсталляция, пункт `1. Microsoft Edge TTS`:
+- следующий экран предлагает выбрать Text-to-Speech провайдера. Среди бесплатных вариантов можно выбрать как облачный сервис, так и с возможностью локальной инсталляции. В данном случае выбрана облачная инсталляция, пункт `1. Microsoft Edge TTS`:
 <p align="center">
-  <img src="./images/hermes_setup_16.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_16.png" width="70%" alt="Text-to-speech">
 </p> 
 
 - далее предлагается выбрать поставщика поискового индекса для поиска в Интернете.
@@ -108,11 +108,15 @@ hermes setup
 > Как правило, возможность поиска самой моделью информации в Интернет определятся провайдером, который обеспечивает работу этой модели. И большинство провайдеров такую опцию не предоставляют. Т.е., если просто спросить у модели, какая погода в городе N, то такущая погода не будет выведена, т.к. модель не имеет доступа в Интернет при инференсе. Поэтому при работе с агентами есть несколько опций, которые обеспечивают возможность работы с данными в Интернет - запуск локальных скриптов на Python, симулирующих работу браузера, работу через механизмы автоматизации десктопного браузера или использование сервиса поискового индекса. Такой сервис можно установить локально, либо использовать какого-либо внешнего поставщика.
 В данном случае такой сервис не используется (`17. Skip`), но можно попробовать `DuckDuckGo` или какой-то из представленных:
 <p align="center">
-  <img src="./images/hermes_setup_17.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_17.png" width="70%" alt="Internet search">
 </p> 
 
 - последний экран содержит сводную информацию по файлам конфигурации Hermes Agent, а также по командам его настройки:
 <p align="center">
-  <img src="./images/hermes_setup_18.png" width="70%" alt="Main screen">
+  <img src="./images/hermes_setup_18.png" width="70%" alt="Filnal screen">
 </p> 
+
+
+
+
 

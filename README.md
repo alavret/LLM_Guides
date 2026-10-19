@@ -3,5 +3,7 @@
 На текущий момент предлагаются инструкции по первоначальной настройке Hermes Agent.
 
 # Содержимое
-[Начальная настройка Hermes Agent](./Setup Hermes Agent.md)
-[Интерфейс и возможности Hermes Agent](./Tune Hermes Agent Desktop.md) 
+
+[Начальная настройка Hermes Agent](Setup Hermes Agent.md)
+
+[Интерфейс и возможности Hermes Agent](Tune Hermes Agent Desktop.md) 

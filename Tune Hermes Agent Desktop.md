@@ -23,7 +23,7 @@
 Профиль (стиль общения и правила для работы LLM, коннекторы и плагины) -> Проект (каталоги с данными и правила для работы с данными в каталогах) -> сессии общения с моделями.
 ```
 <p align="center">
-  <img src="./imagesHermes_Agent_Hierarchi.png" width="70%" alt="Hierarchy">
+  <img src="./images/Hermes_Agent_Hierarchi.png" width="80%" alt="Hierarchy">
 </p>
 
 ## Установка базовых правил работы агента
@@ -102,7 +102,7 @@ Project в Hermes Agent позволяют создать пространств
 ## Capabilities
 Для каждого профиля можно определить инструменты, которыми будет пользоваться Hermеs Agent для выполнения задачи, поставленной пользователем. В список таких инструментов входят skills, tools, connectors, plugins.
 <p align="center">
-  <img src="./images/hermes_setup_29.png" width="70%" alt="New project window">
+  <img src="./images/hermes_setup_29.png" width="70%" alt="Capabilities">
 </p>
 
 ### Skills (Навыки)
@@ -164,7 +164,7 @@ tags:
 
 Другой вариант - удостовериться, что браузер открыт на основной страничке с репозиторием (https://github.com/alavret/LLM_Guides.git), нажать на зеленую кнопку и выбрать `Download ZIP`. Это скачает содержимое всего репозитория на компьютер в виде архивного файла, из которого уже можно извлечь нужные навыки и скопировать себе в целевой каталог.
 <p align="center">
-  <img src="./images/hermes_setup_34.png" width="70%" alt="Skills search">
+  <img src="./images/hermes_setup_34.png" width="70%" alt="Load repositories">
 </p>
 
 #### Самостоятельное создание навыка
@@ -202,7 +202,7 @@ Curator — это фоновый процесс обслуживания нав
 ### Tools
 Tools (инструменты) - это встроенные подключаемые конмпоненты Hermes Agent, которые поддерживаются создателями программы. С их помощью Hermes Agent получает возможность работать с командной строкой, браузером, распознавать картинки и речь и т.д. Их можно включать по необходимости для своего профиля.
 <p align="center">
-  <img src="./images/hermes_setup_36.png" width="70%" alt="Skills search">
+  <img src="./images/hermes_setup_36.png" width="70%" alt="Tools">
 </p>
 
 Как правило, количество Tools ограничено, настраивается один раз и общее для всех профилей. При необходимости, можно включить или выключить необходимые компоненты.
@@ -210,27 +210,27 @@ Tools (инструменты) - это встроенные подключае�
 ### Connectors
 Коннекторы - это связь с внешним миром, как правило, через специализированные MCP сервера. Здесь можно воспользоваться уже существующим сервером для подключения к провайдерам соответствующего сервиса (Notion, Figma, Gitlab), так и прописать свой собственный MCP сервер для работы с внутрикорпоративными данными или другими ИТ системами.
 <p align="center">
-  <img src="./images/hermes_setup_37.png" width="70%" alt="Skills search">
+  <img src="./images/hermes_setup_37.png" width="70%" alt="Connectors">
 </p>
 
 ### Messaging
 Этот раздел посвящен управлению сессиями в Hermes Agent из других приложений. Т.е. вы можете стартовать сессии из Telegram, путем отправки почтовых сообщений на специальный ящик, через API сервер или Webhooks.
 <p align="center">
-  <img src="./images/hermes_setup_38.png" width="70%" alt="Skills search">
+  <img src="./images/hermes_setup_38.png" width="70%" alt="Messaging">
 </p>
 
 ### Approval mode (Уровень разрешений на выполнение команд)
 Каждое продвинутое агентское ПО может выполнять на вашем компьютере какие-либо действия по поручению модели. Это может касаться чтения содержимого файлов, создания и запуска скриптов на Python, работы с браузером и других, потенциально опасных действий.
 В Hermes Agent есть следующие настройки, контролирующие данное поведение - Запрашивать подтверждение для всех действий, Не запрашивать подтверждение и Умный режим (по умолчанию).
 <p align="center">
-  <img src="./images/hermes_setup_39.png" width="70%" alt="Skills search">
+  <img src="./images/hermes_setup_39.png" width="70%" alt="Approval mode">
 </p>
 
 ### Механизм памяти
 Для понимания конценпции можно почитать https://djd1m.github.io/grokbot-vs-hermes/#hermes.
 Несколько слоев памяти:
 <p align="center">
-  <img src="./images/hermes_setup_40.png" width="70%" alt="Skills search">
+  <img src="./images/hermes_setup_40.png" width="70%" alt="Memory">
 </p>
 
 На первом слое (самом быстром) находятся два файла (уникальных для каждого профиля) - MEMORY.md для технических фактов об окружении и USER.md для профиля и предпочтений пользователя.

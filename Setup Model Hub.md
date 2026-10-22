@@ -128,6 +128,7 @@
 Теперь у вас на руках есть URL и API Key и вы можете настраивать ПО на работу с моделями.
 
 [Вернуться в README.md](README.md)
+
 [Начальная настройка Hermes Agent](<Setup Hermes Agent.md>)
 
 

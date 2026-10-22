@@ -122,7 +122,7 @@ hermes setup
 
 - последний экран содержит сводную информацию по файлам конфигурации Hermes Agent, а также по командам его настройки:
 <p align="center">
-  <img src="./images/hermes_setup_18.png" width="70%" alt="Filnal screen">
+  <img src="./images/hermes_setup_18.png" width="70%" alt="Final screen">
 </p> 
 
 

@@ -4,6 +4,11 @@
 
 # Содержимое
 
+Выполните по шагам:
+
+[Настройка Model Hub](<Setup Model Hub.md>)  
+Инструкция по получению доступа к моделям GPT Model Hub в облаке MWS CP: создание сервисной учётной записи, генерация API ключа, активация сервиса, добавление моделей (deployment) и получение URL для подключения ПО к моделям.
+
 [Начальная настройка Hermes Agent](<Setup Hermes Agent.md>)
 
 [Интерфейс и возможности Hermes Agent](<Tune Hermes Agent Desktop.md>)
